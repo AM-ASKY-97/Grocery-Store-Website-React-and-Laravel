@@ -1,0 +1,50 @@
+.review .slide {
+    padding: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.review .slide p {
+    text-align: center;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.review .slide .fa-quote-right {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    font-size: 6rem;
+    color: var(--color-bg);
+}
+
+.review .slide .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background: var(--bg);
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.review .slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 15%;
+    object-fit: cover;
+}
+
+.review .slide .user h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slide .user i {
+    font-size: 1.3rem;
+    color: var(--color-hover);
+}
