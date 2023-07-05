@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './Header.css';
 
 const Header = () => {
+
+    const [active, setActive] = useState("navbar");
+
+    const navToggle = () => {
+        setActive(active === 'navbar' ? 'navbar active' : 'navbar');
+    };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setActive('navbar');
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <header className="header">
             <a href="#" className="logo"><i className="fas fa-shopping-basket"></i>groco</a>
 
-            <nav className="navbar">
-                <a href="#home">Dashboard</a>
+            <nav className={active}>
+                <a href="#home">home</a>
                 <a href="#feature">features</a>
                 <a href="#products">products</a>
                 <a href="#categories">categories</a>
@@ -18,7 +37,7 @@ const Header = () => {
             </nav>
 
             <div className="icons">
-                <div className="fas fa-bars" id="menu-btn"></div>
+                <div className="fas fa-bars" id="menu-btn" onClick={navToggle}></div>
                 <div className="fas fa-search" id="search-btn"></div>
                 <div className="fas fa-shopping-cart" id="card-btn"></div>
                 <div className="fas fa-user" id="login-btn"></div>
