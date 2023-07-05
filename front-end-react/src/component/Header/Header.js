@@ -8,7 +8,7 @@ const Header = () => {
             <a href="#" className="logo"><i className="fas fa-shopping-basket"></i>groco</a>
 
             <nav className="navbar">
-                <a href="#home">home</a>
+                <a href="#home">Dashboard</a>
                 <a href="#feature">features</a>
                 <a href="#products">products</a>
                 <a href="#categories">categories</a>
