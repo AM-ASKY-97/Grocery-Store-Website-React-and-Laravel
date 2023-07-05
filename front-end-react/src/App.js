@@ -10,19 +10,43 @@ import Review from './component/Review/Review';
 import Contact from './component/Contact/Contact';
 import Footer from './component/Footer/Footer';
 
+import { useEffect, useState } from 'react';
+import LoadingPage from './component/LoadingPage/LoadingPage';
+
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+
+    setTimeout(() => {
+      setLoading(false)
+    }, 8000);
+  }, [])
+
   return (
-    <div className="App">
-      <Header />
-      <Home />
-      <Banner />
-      <Feature />
-      <Products />
-      <Categories />
-      <Review />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <div className="App">
+        {
+          loading ? (
+            <LoadingPage />
+          ) : (
+            <>
+              <Header />
+              <Home />
+              <Banner />
+              <Feature />
+              <Products />
+              <Categories />
+              <Review />
+              <Contact />
+              <Footer />
+            </>
+          )
+        }
+      </div>
+    </>
   );
 }
 

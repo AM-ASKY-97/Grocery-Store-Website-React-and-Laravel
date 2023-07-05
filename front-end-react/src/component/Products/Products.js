@@ -19,6 +19,7 @@ const Products = () => {
                 <Swiper
                     modules={[Autoplay]}
                     spaceBetween={10}
+                    loop={true}
                     autoplay={{
                         delay: 4500,
                         disableOnInteraction: false,

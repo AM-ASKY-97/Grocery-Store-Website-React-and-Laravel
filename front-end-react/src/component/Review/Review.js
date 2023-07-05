@@ -31,7 +31,6 @@ const Review = () => {
                         slidesPerView: 3,
                     },
                 }}
-
             >
                 {
                     ReviewBank.map((review) => (
