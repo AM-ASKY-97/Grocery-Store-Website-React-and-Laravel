@@ -49,6 +49,7 @@
     text-decoration: none;
 }
 
+
 .header .navbar a:hover {
     color: var(--color-bg);
 }
@@ -188,12 +189,15 @@
     position: absolute;
     top: 110%;
     right: -110%;
-    width: 30rem;
+    width: 35rem;
     box-shadow: var(--box-shadow);
-    padding: 2rem;
     border-radius: .5rem;
     background: var(--color-white);
-    text-align: center;
+ 
+}
+
+.header .login-form .form-p{
+    padding: 2rem;
 }
 
 .header .login-form.active {
@@ -202,30 +206,100 @@
 }
 
 .header .login-form h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: var(--black);
+    height: 90px;
+    background: var(--color-bg);
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.header .login-form .box {
+
+.header .form-p .row {
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.header .form-p .row input {
+    height: 100%;
     width: 100%;
-    margin: .7rem 0;
-    background: #eee;
-    border-radius: .5rem;
-    padding: 1rem;
-    font-size: 1.6rem;
-    color: var(--black);
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.header .form-p .row input:focus {
+    border-color: #ff7800;
+    box-shadow: inset 0px 0px 2px 2px rgb(255, 211, 128);
+}
+
+.header .form-p .row input::placeholder {
+    color: #999;
+}
+
+.header .form-p .row i {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: var(--color-bg);
+    border: 1px solid #ff7800;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .form-p .pass {
+    margin: 8px 0 20px 0;
+}
+
+.header .form-p .pass a {
+    color: var(--color-bg);
+    font-size: 17px;
     text-decoration: none;
 }
 
-.header .login-form p {
-    font-size: 1.4rem;
-    color: var(--ight-color);
-    padding: .5rem 0;
+.header .form-p .pass a:hover {
+    text-decoration: underline;
 }
 
-.header .login-form p a {
+.header .form-p .button input {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: var(--color-bg);
+    border: 1px solid #ff7800;
+    cursor: pointer;
+}
+
+.header .form-p .button input:hover {
+    background: var(--color-hover);
+    border: 1px solid #3bb77e;
+}
+
+.header .form-p .signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.header .form-p .signup-link a {
     color: var(--color-bg);
+    text-decoration: none;
+}
+
+.header .form-p .signup-link a:hover {
+    text-decoration: underline;
 }
 
 

@@ -2,6 +2,8 @@ import React from 'react'
 
 import './Footer.css';
 
+import footerLogo from './payment (2).png';
+
 const Footer = () => {
     return (
         <section class="footer">
@@ -45,13 +47,13 @@ const Footer = () => {
                     <p>subscribe for latest updates</p>
                     <input type="email" name="" id="" placeholder="your email" class="email" />
                     <input type="submit" value="subscribe" class="btn" /><br />
-                    <img src="./imgaes/payment (2).png" class="payment-img" alt="" />
+                    <img src={footerLogo} class="payment-img" alt="" />
                 </div>
             </div>
 
 
             <div class="credit">Created By <span><a href="https://am-asky-97.github.io/portfolio/">Asky AM</a></span> | ©
-                2022 All rights reserved.
+                2023 All rights reserved.
             </div>
         </section>
     )

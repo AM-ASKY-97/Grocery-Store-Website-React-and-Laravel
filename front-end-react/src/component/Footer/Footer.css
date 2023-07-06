@@ -96,3 +96,15 @@
 }
 
 
+@media (max-width:768px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    .footer {
+        text-align: center;
+    }
+
+}
