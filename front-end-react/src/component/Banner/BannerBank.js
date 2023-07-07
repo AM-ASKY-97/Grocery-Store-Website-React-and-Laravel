@@ -8,21 +8,24 @@ export const BannerBank = [
         id : 1,
         logo : Banner1,
         tittle : 'Vegetables',
-        para : 'limited sales'
+        para : 'limited sales',
+        Animation : 'zoom-in-right'
     },
 
     {
         id : 2,
         logo : Banner2,
         tittle : 'fruits',
-        para : 'limited sales'
+        para : 'limited sales',
+        Animation : 'zoom-in-down'
     },
 
     {
         id : 3,
         logo : Banner3,
         tittle : 'assorted',
-        para : 'limited sales'
+        para : 'limited sales',
+        Animation : 'zoom-in-left'
     }
 
 ]

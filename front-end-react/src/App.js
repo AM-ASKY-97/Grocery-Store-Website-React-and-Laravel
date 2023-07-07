@@ -18,8 +18,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true)
-
+    setLoading(true);
     setTimeout(() => {
       setLoading(false)
     }, 8000);
@@ -33,12 +32,12 @@ function App() {
             <LoadingPage />
           ) : (
             <>
-              <Header />
+              <Header/>
               <Home />
               <Banner />
               <Feature />
               <Products />
-              <Categories />
+              <Categories/>
               <Review />
               <Contact />
               <Footer />

@@ -2,18 +2,22 @@ import React from 'react'
 
 import './Contact.css';
 import contact from './contact.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Contact = () => {
     return (
-        <section class="contact" id="conatct">
-            <h1 class="heading"> contact <span> now </span> </h1>
+        <section class="contact" id="conatct" data-aos-duration="2000">
+            <h1 class="heading" data-aos="zoom-in-down"> contact <span> now </span> </h1>
 
-            <div class="row">
-                <div class="image">
+            <div class="row" >
+                <div class="image" data-aos="zoom-in-right">
                     <img src={contact} alt="" />
                 </div>
 
-                <form>
+                <form data-aos="zoom-in-left">
                     <div class="inputBox">
                         <input type="text" placeholder="first name" />
                         <input type="text" placeholder="last name" />

@@ -7,11 +7,15 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/autoplay';
 
 import { ProductsBank } from './ProductsBank';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Products = () => {
     return (
         <>
-            <section className="products" id="products">
+            <section className="products" id="products" data-aos-duration="2000" data-aos="zoom-in-down">
                 <h1 className="heading">
                     our <span>products</span>
                 </h1>

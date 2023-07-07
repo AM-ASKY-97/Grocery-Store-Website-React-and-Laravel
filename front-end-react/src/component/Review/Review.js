@@ -7,10 +7,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/autoplay';
 import './Review.css';
 import { ReviewBank } from './ReviewBank';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Review = () => {
     return (
-        <section className="review" id="review">
+        <section className="review" id="review" data-aos-duration="2000" data-aos="zoom-in-down">
             <h1 className="heading">customer <span>review</span></h1>
 
             <Swiper

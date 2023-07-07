@@ -8,27 +8,31 @@ export const CategoriesBank = [
         id : 1,
         tittle : 'Vegitables',
         para : 'Upto 45% Off',
-        logo : cat1
+        logo : cat1,
+        Animation : 'zoom-in-right'
     }, 
 
     {
         id : 2,
         tittle : 'Fresh Fruits',
         para : 'Upto 50% Off',
-        logo : cat3
+        logo : cat3,
+        Animation : 'zoom-in-right'
     }, 
 
     {
         id : 3,
         tittle : 'Dairy Product',
         para : 'Upto 35% Off',
-        logo : cat2
+        logo : cat2,
+        Animation : 'zoom-in-left'
     }, 
 
     {
         id : 4,
         tittle : 'Fresh Meat',
         para : 'Upto 45% Off',
-        logo : cat4
+        logo : cat4,
+        Animation : 'zoom-in-left'
     }, 
 ]

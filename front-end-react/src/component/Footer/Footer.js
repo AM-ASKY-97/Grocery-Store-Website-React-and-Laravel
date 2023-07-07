@@ -3,10 +3,14 @@ import React from 'react'
 import './Footer.css';
 
 import footerLogo from './payment (2).png';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Footer = () => {
     return (
-        <section class="footer">
+        <section class="footer" data-aos-duration="2000" data-aos="zoom-out-down">
             <div class="box-container">
                 <div class="box">
                     <h3>Geroco <i class="fas fa-shopping-basket"></i></h3>
