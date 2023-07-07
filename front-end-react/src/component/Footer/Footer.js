@@ -10,7 +10,7 @@ AOS.init();
 
 const Footer = () => {
     return (
-        <section class="footer" data-aos-duration="2000" data-aos="zoom-out-down">
+        <section class="footer" data-aos-duration="2000" data-aos="zoom-in-down">
             <div class="box-container">
                 <div class="box">
                     <h3>Geroco <i class="fas fa-shopping-basket"></i></h3>
