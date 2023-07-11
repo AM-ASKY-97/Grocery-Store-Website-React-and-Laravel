@@ -1,17 +1,15 @@
 import React from 'react'
 
 import './Home.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
-        <section className="home" id="home" data-aos-duration="2000" data-aos="zoom-in-down">
+        <section className="home" id="Home">
             <div className="content">
                 <h3>buy best <span> organic product </span> online </h3>
-                <a href="#banner" className="btn"> get yours now </a>
+       
+                <Link to="banner" smooth={true} offset={-70} duration={500} className='btn'>get yours now</Link>
             </div>
         </section>
     )

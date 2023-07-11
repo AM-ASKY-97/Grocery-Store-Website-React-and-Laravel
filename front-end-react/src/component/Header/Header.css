@@ -39,21 +39,6 @@
     margin-right: 1rem;
 }
 
-.header .navbar a {
-    font-size: 1.7rem;
-    margin: 0 1rem;
-    color: var(--black);
-}
-
-.header .navbar a:link {
-    text-decoration: none;
-}
-
-
-.header .navbar a:hover {
-    color: var(--color-bg);
-}
-
 .header .icons div {
     height: 4.5rem;
     width: 4.5rem;
@@ -332,30 +317,9 @@
     .header .login-form {
         width: 90%;
     }
-
-    .header .navbar {
-        position: absolute;
-        top: 110%;
-        right: -110%;
-        width: 30rem;
-        box-shadow: var(--box-shadow);
-        border-radius: .5rem;
-        background: var(--color-white);
-    }
-
-    .header .navbar.active {
-        right: 2rem;
-        transition: .4s linear;
-    }
-
+    
     .home .content h3 {
         font-size: 4.5rem;
-    }
-
-    .header .navbar a {
-        font-size: 2rem;
-        margin: 2rem 2.5rem;
-        display: block;
     }
 }
 

@@ -9,7 +9,7 @@ export const FeatureBank = [
         logo : Feature1,
         tittle : 'fresh and organic',
         para : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, doloribus!',
-        Animation : 'zoom-in-right'
+        Animation : 'zoom-in-down'
     },
 
     {
@@ -25,6 +25,6 @@ export const FeatureBank = [
         logo : Feature3,
         tittle : 'easy payment',
         para : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, doloribus!',
-        Animation : 'zoom-in-left'
+        Animation : 'zoom-in-down'
     }
 ]

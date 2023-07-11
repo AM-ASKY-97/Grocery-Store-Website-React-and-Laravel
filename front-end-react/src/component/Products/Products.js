@@ -5,6 +5,7 @@ import 'swiper/css/navigation';
 import './Product.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/autoplay';
+import Swal from 'sweetalert2'
 
 import { ProductsBank } from './ProductsBank';
 import AOS from 'aos';
@@ -13,9 +14,18 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 
 const Products = () => {
+
+    const btnClick = () => {
+        Swal.fire({
+            icon: 'info',
+            text: 'This application is currently under development and will soon be released in its full version',
+            footer: 'Thanks for visiting'
+        })
+    }
+
     return (
         <>
-            <section className="products" id="products" data-aos-duration="2000" data-aos="zoom-in-down">
+            <section className="products" id="Products" data-aos-duration="2000" data-aos="zoom-in-down">
                 <h1 className="heading">
                     our <span>products</span>
                 </h1>
@@ -72,7 +82,7 @@ const Products = () => {
                                             <input type="number" name="" min="1" max="1000" value="1" id="" />
                                             <span> /kg</span>
                                         </div>
-                                        <a href="#" class="btn">add to cart</a>
+                                        <button class="btn a" onClick={btnClick}>add to cart</button>
                                     </div>
                                 </div>
                             </SwiperSlide>

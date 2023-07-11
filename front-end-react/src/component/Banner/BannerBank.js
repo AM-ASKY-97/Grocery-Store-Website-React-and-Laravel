@@ -9,7 +9,7 @@ export const BannerBank = [
         logo : Banner1,
         tittle : 'Vegetables',
         para : 'limited sales',
-        Animation : 'zoom-in-right'
+        Animation : 'zoom-in-down'
     },
 
     {
@@ -25,7 +25,7 @@ export const BannerBank = [
         logo : Banner3,
         tittle : 'assorted',
         para : 'limited sales',
-        Animation : 'zoom-in-left'
+        Animation : 'zoom-in-down'
     }
 
 ]

@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import './Header.css';
 import { CardBank } from './CardBank';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
+import Navbar from './Navbar/Navbar';
 
 const Header = () => {
 
@@ -13,7 +10,6 @@ const Header = () => {
     const [search, setSearch] = useState("search-form");
     const [card, setCard] = useState('shopping-cart');
     const [login, setLogin] = useState('login-form');
-
 
     const navToggle = () => {
         setNavbar(navbar === 'navbar' ? 'navbar active' : 'navbar');
@@ -59,18 +55,10 @@ const Header = () => {
     }, []);
 
     return (
-        <header className="header" data-aos-duration="2000" data-aos="zoom-in-down">
+        <header className="header">
             <a href="#" className="logo"><i className="fas fa-shopping-basket"></i>groco</a>
 
-            <nav className={navbar}>
-                <a href="#home"> Home</a>
-                <a href="#feature">Features</a>
-                <a href="#products">Products</a>
-                <a href="#categories">Categories</a>
-                <a href="#review">Review</a>
-                <a href="#blog">Blog</a>
-                <a href="#conatct">Contact</a>
-            </nav>
+            <Navbar className={navbar}/>
 
             <div className="icons">
                 <div className="fas fa-bars" id="menu-btn" onClick={navToggle}></div>
@@ -106,26 +94,26 @@ const Header = () => {
 
             <form action="" className={login}>
                 <div className='tittle'>
-                <h3>Login now</h3>
-                </div>
-            
-               <div className='form-p'>
-               <div class="row">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Email or Phone" required />
+                    <h3>Login now</h3>
                 </div>
 
-                <div class="row">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" required />
+                <div className='form-p'>
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Email or Phone" required />
+                    </div>
+
+                    <div class="row">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required />
+                    </div>
+
+                    <div class="pass"><a href="#">Forgot password?</a></div>
+                    <div class="row button">
+                        <input type="submit" value="Login" />
+                    </div>
+                    <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
                 </div>
-            
-                <div class="pass"><a href="#">Forgot password?</a></div>
-                <div class="row button">
-                    <input type="submit" value="Login" />
-                </div>
-                <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
-               </div>
             </form>
         </header>
     )

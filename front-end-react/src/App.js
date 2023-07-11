@@ -1,17 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './component/Header/Header';
-import Home from './component/Home/Home';
-import Banner from './component/Banner/Banner';
-import Feature from './component/Feature/Feature';
-import Products from './component/Products/Products';
-import Categories from './component/Categories/Categories';
-import Review from './component/Review/Review';
-import Contact from './component/Contact/Contact';
-import Footer from './component/Footer/Footer';
 
 import { useEffect, useState } from 'react';
 import LoadingPage from './component/LoadingPage/LoadingPage';
+import { Route, Routes } from 'react-router-dom';
+import MainPage from './component/MainSections/MainPage';
+import Products from './component/Router/Products/Products';
+import Header from './component/Header/Header';
+import Footer from './component/Footer/Footer';
 
 function App() {
 
@@ -21,7 +17,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false)
-    }, 8000);
+    }, 5000);
   }, [])
 
   return (
@@ -32,14 +28,11 @@ function App() {
             <LoadingPage />
           ) : (
             <>
-              <Header/>
-              <Home />
-              <Banner />
-              <Feature />
-              <Products />
-              <Categories/>
-              <Review />
-              <Contact />
+              <Header />
+              <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path='/products' element={<Products />} />
+              </Routes>
               <Footer />
             </>
           )

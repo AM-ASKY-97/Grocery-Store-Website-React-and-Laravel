@@ -14,7 +14,7 @@ AOS.init();
 
 const Review = () => {
     return (
-        <section className="review" id="review" data-aos-duration="2000" data-aos="zoom-in-down">
+        <section className="review" id="Review" data-aos-duration="2000" data-aos="zoom-in-down">
             <h1 className="heading">customer <span>review</span></h1>
 
             <Swiper

@@ -9,7 +9,7 @@ export const CategoriesBank = [
         tittle : 'Vegitables',
         para : 'Upto 45% Off',
         logo : cat1,
-        Animation : 'zoom-in-right'
+        Animation : 'zoom-in-down'
     }, 
 
     {
@@ -17,7 +17,7 @@ export const CategoriesBank = [
         tittle : 'Fresh Fruits',
         para : 'Upto 50% Off',
         logo : cat3,
-        Animation : 'zoom-in-right'
+        Animation : 'zoom-in-down'
     }, 
 
     {
@@ -25,7 +25,7 @@ export const CategoriesBank = [
         tittle : 'Dairy Product',
         para : 'Upto 35% Off',
         logo : cat2,
-        Animation : 'zoom-in-left'
+        Animation : 'zoom-in-down'
     }, 
 
     {
@@ -33,6 +33,6 @@ export const CategoriesBank = [
         tittle : 'Fresh Meat',
         para : 'Upto 45% Off',
         logo : cat4,
-        Animation : 'zoom-in-left'
+        Animation : 'zoom-in-down'
     }, 
 ]

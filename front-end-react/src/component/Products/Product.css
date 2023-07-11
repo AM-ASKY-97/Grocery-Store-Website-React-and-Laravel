@@ -6,7 +6,7 @@
     margin-bottom: 2rem;
 }
 
-.products .product-slider .box{
+.products .product-slider .box {
     background: var(--color-white);
     overflow: hidden;
     border-radius: .5rem;
@@ -22,9 +22,10 @@
     height: 15rem;
 }
 
-.products .product-slider .box .discount{
+.products .product-slider .box .discount {
     position: absolute;
-    top: 1rem; left: 1rem;
+    top: 1rem;
+    left: 1rem;
     background: var(--color-bg);
     color: var(--color-white);
     padding: .7rem 1rem;
@@ -32,12 +33,13 @@
     padding-bottom: .5rem;
 }
 
-.products .product-slider .box .icons{
+.products .product-slider .box .icons {
     position: absolute;
-    top: .5rem; right: -6rem;
+    top: .5rem;
+    right: -6rem;
 }
 
-.products .product-slider .box .icons a{
+.products .product-slider .box .icons a {
     display: block;
     height: 4.5rem;
     width: 4.5rem;
@@ -49,11 +51,11 @@
     margin-top: .7rem;
 }
 
-.products .product-slider .box:hover .icons{
+.products .product-slider .box:hover .icons {
     right: 1rem;
 }
 
-.products .product-slider .box .icons a:hover{
+.products .product-slider .box .icons a:hover {
     background: var(--color-bg);
     color: var(--color-white);
 }
@@ -64,30 +66,30 @@
 }
 
 
-.products .product-slider .box h3{
+.products .product-slider .box h3 {
     color: var(--black);
     font-size: 2.5rem;
 }
 
-.products .product-slider .box .stars i{
+.products .product-slider .box .stars i {
     padding: 1rem .1rem;
     font-size: 1.7rem;
     color: gold;
 }
 
-.products .product-slider .box .price{
+.products .product-slider .box .price {
     font-size: 2rem;
     color: #333;
     padding: .5rem 0;
 }
 
-.products .product-slider .box .price span{
+.products .product-slider .box .price span {
     font-size: 1.5rem;
     color: #999;
     text-decoration: line-through;
 }
 
-.products .product-slider .box .quantity{
+.products .product-slider .box .quantity {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,12 +97,12 @@
     padding-bottom: .5rem;
 }
 
-.products .product-slider .box .quantity span{
+.products .product-slider .box .quantity span {
     padding: 0 .7rem;
     font-size: 1.7rem;
 }
 
-.products .product-slider .box .quantity input{
+.products .product-slider .box .quantity input {
     border: .1rem solid rgba(0, 0, 0, .3);
     font-size: 1.5rem;
     font-weight: bolder;
@@ -110,6 +112,10 @@
     background: rgba(0, 0, 0, .05);
 }
 
-.products .product-slider .box .btn{
+.products .product-slider .box .a {
     display: block;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }

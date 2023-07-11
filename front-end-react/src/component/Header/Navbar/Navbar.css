@@ -1,0 +1,49 @@
+.header .navbar .a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+}
+
+.header .navbar .txtactive {
+    color: var(--color-bg);
+}
+
+.header .navbar .notactive {
+    color: var(--black);
+}
+
+.header .navbar .a:link {
+    text-decoration: none;
+}
+
+
+.header .navbar .a:hover {
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+
+
+@media (max-width:768px) {
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -110%;
+        height: 100vh;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        background: var(--color-white);   
+    }
+
+    .header .navbar.active {
+        right: 0rem;
+        transition: .5s linear;
+    }
+
+    .header .navbar .a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+}

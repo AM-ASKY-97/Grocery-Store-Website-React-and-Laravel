@@ -36,13 +36,13 @@ const Footer = () => {
 
                 <div class="box">
                     <h3>quick links</h3>
-                    <a href="" class="links"><i class="fas fa-arrow-right"></i>Home</a>
-                    <a href="" class="links"><i class="fas fa-arrow-right"></i>Features</a>
-                    <a href="" class="links"><i class="fas fa-arrow-right"></i>Products</a>
-                    <a href="" class="links"><i class="fas fa-arrow-right"></i>Categories</a>
-                    <a href="" class="links"><i class="fas fa-arrow-right"></i>Review</a>
+                    <a href="#home" class="links"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="#feature" class="links"><i class="fas fa-arrow-right"></i>Features</a>
+                    <a href="#products" class="links"><i class="fas fa-arrow-right"></i>Products</a>
+                    <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>Categories</a>
+                    <a href="#review" class="links"><i class="fas fa-arrow-right"></i>Review</a>
                     <a href="" class="links"><i class="fas fa-arrow-right"></i>Blog</a>
-                    <a href="" class="links"><i class="fas fa-arrow-right"></i>Contact</a>
+                    <a href="#conatct" class="links"><i class="fas fa-arrow-right"></i>Contact</a>
                 </div>
 
 
