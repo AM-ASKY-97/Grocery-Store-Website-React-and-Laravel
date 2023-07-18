@@ -13,7 +13,7 @@ const Footer = () => {
         <section class="footer" data-aos-duration="2000" data-aos="zoom-in-down">
             <div class="box-container">
                 <div class="box">
-                    <h3>Geroco <i class="fas fa-shopping-basket"></i></h3>
+                    <h3>A Mart <i class="fas fa-shopping-basket"></i></h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt explicabo animi, officiis quo, in
                         nostrum tempora non quibusdam molestias dolorem repellat blanditiis tenetur facere incidunt dolore
                         qui porro dolor. Eum?</p>

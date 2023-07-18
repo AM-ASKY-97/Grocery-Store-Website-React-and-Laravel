@@ -12,13 +12,15 @@ import Footer from '../Footer/Footer'
 const MainPage = () => {
   return (
     <div>
-        <Home />
-        <Banner />
-        <Feature />
-        <Products />
-        <Categories />
-        <Review />
-        <Contact />
+      <Header />
+      <Home />
+      <Banner />
+      <Feature />
+      <Products />
+      <Categories />
+      <Review />
+      <Contact />
+      <Footer />
     </div>
   )
 }

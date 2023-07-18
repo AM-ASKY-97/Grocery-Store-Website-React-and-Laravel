@@ -178,10 +178,10 @@
     box-shadow: var(--box-shadow);
     border-radius: .5rem;
     background: var(--color-white);
- 
+
 }
 
-.header .login-form .form-p{
+.header .login-form .form-p {
     padding: 2rem;
 }
 
@@ -317,7 +317,7 @@
     .header .login-form {
         width: 90%;
     }
-    
+
     .home .content h3 {
         font-size: 4.5rem;
     }

@@ -5,9 +5,8 @@ import { useEffect, useState } from 'react';
 import LoadingPage from './component/LoadingPage/LoadingPage';
 import { Route, Routes } from 'react-router-dom';
 import MainPage from './component/MainSections/MainPage';
-import Products from './component/Router/Products/Products';
-import Header from './component/Header/Header';
-import Footer from './component/Footer/Footer';
+
+import NewAccount from './component/Router/Login/NewAccount';
 
 function App() {
 
@@ -28,12 +27,11 @@ function App() {
             <LoadingPage />
           ) : (
             <>
-              <Header />
               <Routes>
                 <Route path="/" element={<MainPage />} />
-                <Route path='/products' element={<Products />} />
+                <Route path="/new-user" element={<NewAccount />} />
               </Routes>
-              <Footer />
+
             </>
           )
         }

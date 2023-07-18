@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './Header.css';
 import { CardBank } from './CardBank';
 import Navbar from './Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -56,7 +57,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <a href="#" className="logo"><i className="fas fa-shopping-basket"></i>groco</a>
+            <a href="#" className="logo"><i className="fas fa-shopping-basket"></i>A Mart</a>
 
             <Navbar className={navbar}/>
 
@@ -64,7 +65,8 @@ const Header = () => {
                 <div className="fas fa-bars" id="menu-btn" onClick={navToggle}></div>
                 <div className="fas fa-search" id="search-btn" onClick={btnSearchClick}></div>
                 <div className="fas fa-shopping-cart" id="card-btn" onClick={btnCardClick}></div>
-                <div className="fas fa-user" id="login-btn" onClick={btnLogin}></div>
+                
+                <Link to="/new-user"><div className="fas fa-user"></div></Link>
             </div>
 
             <form action="" className={search}>
