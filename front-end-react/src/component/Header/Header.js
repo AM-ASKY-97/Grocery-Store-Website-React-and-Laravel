@@ -63,7 +63,7 @@ const Header = () => {
 
             <div className="icons">
                 <div className="fas fa-bars" id="menu-btn" onClick={navToggle}></div>
-                <div className="fas fa-search" id="search-btn" onClick={btnSearchClick}></div>
+                {/*<div className="fas fa-search" id="search-btn" onClick={btnSearchClick}></div>*/}
                 <div className="fas fa-shopping-cart" id="card-btn" onClick={btnCardClick}></div>
                 
                 <Link to="/new-user"><div className="fas fa-user"></div></Link>
