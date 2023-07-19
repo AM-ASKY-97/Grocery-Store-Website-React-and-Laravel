@@ -6,7 +6,7 @@ import LoadingPage from './component/LoadingPage/LoadingPage';
 import { Route, Routes } from 'react-router-dom';
 import MainPage from './component/MainSections/MainPage';
 
-import NewAccount from './component/Router/Login/NewAccount';
+import LoginMain from './component/Router/Login/LoginMain/LoginMain';
 
 function App() {
 
@@ -27,9 +27,10 @@ function App() {
             <LoadingPage />
           ) : (
             <>
+
               <Routes>
                 <Route path="/" element={<MainPage />} />
-                <Route path="/new-user" element={<NewAccount />} />
+                <Route path="/new-user" element={<LoginMain />} />
               </Routes>
 
             </>

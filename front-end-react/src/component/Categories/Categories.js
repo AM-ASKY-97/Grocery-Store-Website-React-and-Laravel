@@ -5,10 +5,19 @@ import { CategoriesBank } from './CategoriesBank';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { Link } from 'react-router-dom';
-// ..
+import Swal from 'sweetalert2'
+
 AOS.init();
 
 const Categories = () => {
+
+    const btnClick = () => {
+        Swal.fire({
+            icon: 'info',
+            text: 'This application is currently under development and will soon be released in its full version',
+            footer: 'Thanks for visiting'
+        })
+    }
 
     return (
         <section className="categories" id="Categories">
@@ -21,8 +30,8 @@ const Categories = () => {
                             <img src={categories.logo} alt="" />
                             <h3>{categories.tittle}</h3>
                             <p>{categories.para}</p>
-                       
-                            <Link to="/products" className='btn'>shop now</Link>
+
+                            <Link className='btn' onClick={btnClick}>shop now</Link>
                         </div>
                     ))
                 }
